@@ -1,0 +1,98 @@
+/* Estilos del botón flotante */
+.chatbot-toggle-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    padding: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.chatbot-toggle-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Estilos de la ventana del chatbot */
+.chat-window {
+    display: none;
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+}
+
+.chat-log {
+    height: 85%;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+.chat-input {
+    width: calc(100% - 70px);
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-top: 1px solid #ddd;
+    border-radius: 0 0 8px 8px;
+    font-size: 14px;
+}
+
+.chat-submit {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 70px;
+}
+
+/* Estilo de los mensajes */
+.user-message,
+.bot-message {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.user-message {
+    background-color: #007bff;
+    color: white;
+    text-align: right;
+}
+
+.bot-message {
+    background-color: #f1f1f1;
+    color: #333;
+    text-align: left;
+}
+
+/* Estilo para el botón flotante */
+.chatbot-toggle-btn img {
+    width: 100px; /* Ajusta el tamaño que desees */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    transition: transform 0.3s ease; /* Efecto de transición para cuando se pasa el mouse */
+}
+
+
+
+/* Si quieres un color de borde cuando no está enfocado */
+.chat-input:focus {
+    border: none; /* Evita que el borde cambie al hacer foco */
+    box-shadow: none; /* Elimina cualquier sombra al hacer foco */
+}
